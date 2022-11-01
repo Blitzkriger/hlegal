@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+  }
+
+//   .wrapper {
+//     width: 1320px;
+//     margin-left: auto;
+//     margin-right: auto;
+//   }
+
+  body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  p,h1,h2,h3,h4,ul,li{
+    margin: 0;
+    padding: 0;
+  }
+  
+  .hide {
+    display: none;
+  }
+
+  ul li {
+    list-style: none;
+  }

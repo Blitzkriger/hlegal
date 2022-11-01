@@ -1,0 +1,123 @@
+.wrapper {
+    width: 315px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.opportunities {
+    background: $mainBackgroundColor;
+    border-radius: 0px 0px 12px 12px;
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+
+.services-link {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: $linkColor;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 10px;
+
+    &::after {
+        content: "";
+        background-image: url(../images/arrow-right-blue.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: block;
+        width: 12px;
+        height: 12px;
+        position: absolute;
+        top: 3px;
+        right: -15px;
+    }
+}
+
+.services-link:hover::after {
+    content: "";
+    background-image: url(../images/arrow-right-red.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 3px;
+    right: -15px;
+}
+
+.services-link:hover {
+    color: #F0145A;
+}
+
+.about {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+    @include titleColor;
+}
+
+.services {
+    margin-bottom: 30px;
+}
+
+.benefit-list {
+    margin-bottom: 30px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.benefit-list-img {
+    background-color: #fff;
+    border-radius: 24px;
+    padding: 14px;
+    width: 64px;
+    height: 64px;
+    margin-bottom: 30px;
+    box-sizing: content-box;
+}
+
+.benefit-list-link {
+    font-size: 22px;
+    line-height: 27px;
+    font-weight: 700;
+    color: #24A3FF;
+    text-decoration: none;
+    margin-bottom: 15px;
+    display: flex;
+}
+
+.benefit-list-text {
+    font-size: 16px;
+    line-height: 26px;
+    color: #fff;
+}
+
+.shadow-layer-block {
+    width: 315px;
+}
+
+.shadow-layer1 {
+    width: 335px;
+    height: 10px;
+    @include shadowLayerMargin (20px, 20px);
+    background-color: #CACADB;
+    @include borderRadiusShadow;
+}
+
+.shadow-layer2 {
+    width: 295px;
+    height: 10px;
+    @include shadowLayerMargin (40px, 40px);
+    background-color: #E7E7F2;
+    @include borderRadiusShadow;
+}
+
