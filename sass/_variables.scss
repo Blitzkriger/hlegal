@@ -12,7 +12,26 @@ $linkColor: #24A3FF;
     border-bottom-right-radius: 12px;
 }
 
-@mixin shadowLayerMargin ($marginLeft, $marginRight) {
-    margin-left: $marginLeft;
-    margin-right: $marginRight;
+$partnerName: 'hillel', 'wannabiz', 'tapgerine';
+$partnerColor: (
+    'hillel': #1C4280,
+    'wannabiz': #143646,
+    'tapgerine': #F48B30,
+    '3dlook': #9E4DC3,
+    'orangear': #FD9339,
+    'adtelligent': #E2E2E4,
+    'clickky': #C71C36,
+    'ecolease': #DCF3F9,
+    'infratek': #EAEAEA,
+    'sitypark': #282240,
+    'artprint': #1D4568,
+    'ultimate': #000000,   
+);
+
+@each $name, $path in $partnerColor {
+    .trust-link-#{$name} {
+        background-color: $path;
+    }
 }
+
+

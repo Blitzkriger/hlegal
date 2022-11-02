@@ -9,6 +9,32 @@
     border-radius: 0px 0px 12px 12px;
     padding-top: 30px;
     padding-bottom: 60px;
+    position: relative;
+
+    &::before {
+        content: "";
+        height: 10px;
+        background-color: #CACADB;
+        @include borderRadiusShadow;
+        display: flex;
+        position: absolute;
+        bottom: -10px;
+        left: 20px;
+        right: 20px;
+
+    }
+
+    &::after {
+        content: "";
+        height: 10px;
+        background-color: #E7E7F2;
+        @include borderRadiusShadow;
+        display: flex;
+        position: absolute;
+        bottom: -20px;
+        left: 40px;
+        right: 40px;
+    }
 }
 
 .services-link {
@@ -75,7 +101,7 @@
     }
 }
 
-.benefit-list-img {
+.benefit-list-image {
     background-color: #fff;
     border-radius: 24px;
     padding: 14px;
@@ -83,6 +109,7 @@
     height: 64px;
     margin-bottom: 30px;
     box-sizing: content-box;
+    display: inline-block;
 }
 
 .benefit-list-link {
@@ -100,24 +127,3 @@
     line-height: 26px;
     color: #fff;
 }
-
-.shadow-layer-block {
-    width: 315px;
-}
-
-.shadow-layer1 {
-    width: 335px;
-    height: 10px;
-    @include shadowLayerMargin (20px, 20px);
-    background-color: #CACADB;
-    @include borderRadiusShadow;
-}
-
-.shadow-layer2 {
-    width: 295px;
-    height: 10px;
-    @include shadowLayerMargin (40px, 40px);
-    background-color: #E7E7F2;
-    @include borderRadiusShadow;
-}
-

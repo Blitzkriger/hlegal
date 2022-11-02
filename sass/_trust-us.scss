@@ -7,69 +7,27 @@
     color: #323264;
     text-align: center;
     margin-bottom: 30px;
+}
+
+.already-trust-block {
     margin-top: 60px;
 }
 
 .already-trust-link {
     width: 375px;
     height: 120px;
-    background-color: #000;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.already-trust-links {
-    a:nth-child(1) {
-        background-color: #1C4280;
-    }
-
-    a:nth-child(2) {
-        background-color: #143646;
-    }
-
-    a:nth-child(3) {
-        background-color: #F48B30;
-    }
-
-    a:nth-child(4) {
-        background-color: #9E4DC3;
-    }
-
-    a:nth-child(5) {
-        background-color: #FD9339;
-    }
-
-    a:nth-child(6) {
-        background-color: #E2E2E4;
-    }
-
-    a:nth-child(7) {
-        background-color: #C71C36;
-    }
-
-    a:nth-child(8) {
-        background-color: #DCF3F9;
-    }
-
-    a:nth-child(9) {
-        background-color: #EAEAEA;
-    }
-
-    a:nth-child(10) {
-        background-color: #282240;
-    }
-
-    a:nth-child(11) {
-        background-color: #1D4568;
-    }
-
-    a:nth-child(12) {
-        background-color: #000000;
-    }
+.already-trust-links-block {
+    width: 375px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.invisible {
+.already-trust-links a:nth-child(n+7) {
     display: none;
 }
 
