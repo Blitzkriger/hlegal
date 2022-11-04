@@ -1,10 +1,31 @@
 $mainBackgroundColor: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
 $linkColor: #24A3FF;
+$hoverLink: #F0145A;
 
-@mixin titleColor {
+@mixin regularLink {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: $linkColor;
+    display: inline-block;
+}
+
+@mixin h2Font ($h2Fn, $h2Ln) {
+    font-weight: 700;
+    font-size: $h2Fn;
+    line-height: $h2Ln;
+}
+
+@mixin titleColorAndFont {
     background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
 }
 
 @mixin borderRadiusShadow {

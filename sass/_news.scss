@@ -1,0 +1,73 @@
+.news {
+    padding-top: 30px;
+    background-color: #F5F5FA;
+}
+
+.news-link {
+    margin-bottom: 5px;
+}
+
+.news-about-title {
+    @include titleColorAndFont;
+    margin-bottom: 30px;
+}
+
+.news-block-article {
+    background-color: #ffffff;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    overflow: hidden;
+
+}
+
+.news-block-img {
+    background-image: url(../images/equity-img.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 200px;
+}
+
+.news-block-img-gdpr{
+    background-image: url(../images/gdpr.jpg);
+}
+
+.news-block-img-millennial {
+    background-image: url(../images/millennial.jpg);
+}
+
+.news-block-content {
+    padding: 30px;
+}
+
+.news-block-link {
+    color: $linkColor;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.news-block-link:hover {
+    color: $hoverLink;
+}
+
+.news-block-time {
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #B3B3BA;
+    padding-bottom: 15px;
+    border-bottom: 4px solid #E6E6F0;
+    margin-bottom: 15px;
+}
+
+.news-block-about {
+    font-size: 14px;
+    line-height: 22px;
+}

@@ -1,0 +1,69 @@
+.team-member {
+    background-color: #F5F5FA;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.team-member-content {
+    padding: 30px
+}
+
+.team-link {
+    margin-bottom: 5px;
+}
+
+.team-member-quote {
+    @include titleColorAndFont;
+    margin-bottom: 30px;
+}
+
+.team-member-info {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #B3B3BA;
+    margin-bottom: 6px;
+}
+
+.team-member-position {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #B3B3BA;
+}
+
+.team-member-photo {
+    background-image: url(../images/member-oleksandrovsky.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+    display: inline-block;
+}
+
+.team-member-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-member-button {
+    margin-right: 15px;
+    border: 0;
+    background-color: #24A3FF;
+    opacity: 0.2;
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.team-member-button:last-child {
+    margin-right: 0;
+}
+
+.team-member-button-active {
+    opacity: 1;
+}

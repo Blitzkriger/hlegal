@@ -1,5 +1,7 @@
 .wrapper {
-    width: 315px;
+    padding-left: 30px;
+    padding-right: 30px;
+    max-width: 1920px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -10,6 +12,7 @@
     padding-top: 30px;
     padding-bottom: 60px;
     position: relative;
+    margin-bottom: 50px;
 
     &::before {
         content: "";
@@ -38,15 +41,8 @@
 }
 
 .services-link {
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 14px;
-    line-height: 17px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    color: $linkColor;
+    @include regularLink;
     position: relative;
-    display: inline-block;
     margin-bottom: 10px;
 
     &::after {
@@ -79,14 +75,11 @@
 }
 
 .services-link:hover {
-    color: #F0145A;
+    color: $hoverLink;
 }
 
 .about {
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 37px;
-    @include titleColor;
+    @include titleColorAndFont;
 }
 
 .services {

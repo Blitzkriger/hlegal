@@ -378,7 +378,9 @@ ul li {
 }
 
 .wrapper {
-  width: 315px;
+  padding-left: 30px;
+  padding-right: 30px;
+  max-width: 1920px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -389,6 +391,7 @@ ul li {
   padding-top: 30px;
   padding-bottom: 60px;
   position: relative;
+  margin-bottom: 50px;
 }
 .opportunities::before {
   content: "";
@@ -423,8 +426,8 @@ ul li {
   font-weight: 700;
   letter-spacing: 1px;
   color: #24A3FF;
-  position: relative;
   display: inline-block;
+  position: relative;
   margin-bottom: 10px;
 }
 .services-link::after {
@@ -460,12 +463,12 @@ ul li {
 }
 
 .about {
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 37px;
   background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
 }
 
 .services {
@@ -506,6 +509,81 @@ ul li {
   color: #fff;
 }
 
+.team-member {
+  background-color: #F5F5FA;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.team-member-content {
+  padding: 30px;
+}
+
+.team-link {
+  margin-bottom: 5px;
+}
+
+.team-member-quote {
+  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  margin-bottom: 30px;
+}
+
+.team-member-info {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #B3B3BA;
+  margin-bottom: 6px;
+}
+
+.team-member-position {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #B3B3BA;
+}
+
+.team-member-photo {
+  background-image: url(../images/member-oleksandrovsky.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 500px;
+  display: inline-block;
+}
+
+.team-member-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-member-button {
+  margin-right: 15px;
+  border: 0;
+  background-color: #24A3FF;
+  opacity: 0.2;
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.team-member-button:last-child {
+  margin-right: 0;
+}
+
+.team-member-button-active {
+  opacity: 1;
+}
+
 .already-trust-title {
   font-size: 14px;
   line-height: 17px;
@@ -522,17 +600,11 @@ ul li {
 }
 
 .already-trust-link {
-  width: 375px;
+  width: 100%;
   height: 120px;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.already-trust-links-block {
-  width: 375px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .already-trust-links a:nth-child(n+7) {
@@ -543,9 +615,88 @@ ul li {
   display: none;
 }
 
+.news {
+  padding-top: 30px;
+  background-color: #F5F5FA;
+}
+
+.news-link {
+  margin-bottom: 5px;
+}
+
+.news-about-title {
+  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  margin-bottom: 30px;
+}
+
+.news-block-article {
+  background-color: #ffffff;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.news-block-img {
+  background-image: url(../images/equity-img.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 200px;
+}
+
+.news-block-img-gdpr {
+  background-image: url(../images/gdpr.jpg);
+}
+
+.news-block-img-millennial {
+  background-image: url(../images/millennial.jpg);
+}
+
+.news-block-content {
+  padding: 30px;
+}
+
+.news-block-link {
+  color: #24A3FF;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.news-block-link:hover {
+  color: #F0145A;
+}
+
+.news-block-time {
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #B3B3BA;
+  padding-bottom: 15px;
+  border-bottom: 4px solid #E6E6F0;
+  margin-bottom: 15px;
+}
+
+.news-block-about {
+  font-size: 14px;
+  line-height: 22px;
+}
+
 @media (min-width: 768px) {
   .wrapper {
-    width: 648px;
+    padding-left: 60px;
+    padding-right: 60px;
   }
   .opportunities {
     padding-top: 60px;
@@ -564,19 +715,20 @@ ul li {
     justify-content: space-between;
   }
   .benefit-list {
-    width: 294px;
+    width: calc(50% - 30px);
+  }
+  .team-member-quote {
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 46px;
   }
   .already-trust-link {
-    width: 256px;
+    width: 33.33%;
     height: 120px;
-  }
-  .already-trust-links-block {
-    width: 768px;
   }
   .already-trust-links {
     display: flex;
     flex-wrap: wrap;
-    width: 768px;
   }
   .already-trust-links a:nth-child(n+7) {
     display: flex;
@@ -587,37 +739,54 @@ ul li {
   .vis-img {
     display: none;
   }
+  .news-about-title {
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 46px;
+  }
+  .news-blocks {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .news-block-article {
+    width: calc(50% - 15px);
+  }
+  .news-block-article-millennial {
+    width: 100%;
+  }
 }
 @media (min-width: 1024px) {
-  .wrapper {
-    width: 904px;
+  .benefits-list {
+    gap: 60px;
   }
   .benefit-list {
-    width: 261px;
-    margin-bottom: 60px;
+    width: calc(33.33% - 40px);
+    margin-bottom: 0;
   }
-  .already-trust-links-block {
-    width: 1024px;
+  .team-member {
+    display: flex;
   }
-  .already-trust-links {
-    width: 1024px;
+  .team-member-content {
+    flex-shrink: 2;
+  }
+  .team-member-photo {
+    height: auto;
+    width: 75%;
+  }
+  .already-trust-link {
+    width: 25%;
+  }
+  .news-block-article {
+    width: calc(33.33% - 20px);
   }
 }
 @media (min-width: 1440px) {
-  .wrapper {
-    width: 1320px;
+  .team-member-content {
+    flex-shrink: 1;
   }
-  .benefit-list {
-    width: 400px;
-  }
-  .already-trust-link {
-    width: 360px;
-  }
-  .already-trust-links-block {
-    width: 1440px;
-  }
-  .already-trust-links {
-    width: 1440px;
+  .team-member-photo {
+    width: 100%;
   }
   .invis-img {
     display: none;
@@ -628,22 +797,41 @@ ul li {
 }
 @media (min-width: 1920px) {
   .wrapper {
-    width: 1600px;
+    padding-left: 160px;
+    padding-right: 160px;
   }
-  .benefit-list {
-    width: 493px;
+  .team-member-photo {
+    width: 60%;
   }
   .already-trust-link {
     width: 430px;
   }
   .already-trust-links-block {
-    width: 1920px;
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .already-trust-links {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1920px;
+    padding-bottom: 60px;
+  }
+  .trust-link-hillel {
+    border-top-left-radius: 12px;
+    overflow: hidden;
+  }
+  .trust-link-3dlook {
+    border-top-right-radius: 12px;
+    overflow: hidden;
+  }
+  .trust-link-infratek {
+    border-bottom-left-radius: 12px;
+    overflow: hidden;
+  }
+  .trust-link-ultimate {
+    border-bottom-right-radius: 12px;
+    overflow: hidden;
   }
 }
 
