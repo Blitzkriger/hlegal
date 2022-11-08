@@ -7,7 +7,6 @@
 }
 
 .opportunities {
-    background: $mainBackgroundColor;
     border-radius: 0px 0px 12px 12px;
     padding-top: 30px;
     padding-bottom: 60px;
@@ -41,9 +40,12 @@
 }
 
 .services-link {
+    margin-bottom: 10px;
+}
+
+.main-link {
     @include regularLink;
     position: relative;
-    margin-bottom: 10px;
 
     &::after {
         content: "";
@@ -60,7 +62,7 @@
     }
 }
 
-.services-link:hover::after {
+.main-link:hover::after {
     content: "";
     background-image: url(../images/arrow-right-red.png);
     background-size: cover;
@@ -74,7 +76,7 @@
     right: -15px;
 }
 
-.services-link:hover {
+.main-link:hover {
     color: $hoverLink;
 }
 

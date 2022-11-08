@@ -4,6 +4,24 @@
         padding-right: 60px;
     }
 
+    .ideas-block-wrapper {
+        padding-right: 60px;
+        padding-left: 60px;
+    }
+
+    .nav-link {
+        @include h2Font (38px, 46px);
+        padding: 60px 0;
+    }
+
+    .ideas-about-block {
+        padding-top: 60px
+    }
+
+    .ideas-about-title {
+        @include h2Font (30px, 37px);
+    }
+
     .opportunities {
         padding-top: 60px;
     }
@@ -55,7 +73,7 @@
     }
 
     .news-about-title {
-        @include h2Font (38px, 46px)
+        @include h2Font (38px, 46px);
     }
 
     .news-blocks {
@@ -73,7 +91,48 @@
     }
 }
 
+@media (max-width: 1023px) {
+    .ideas-about-block {
+        border-top: 4px solid rgba(255, 255, 255, 0.3);
+    }
+}
+
 @media (min-width: 1024px) {
+    .about-ideas-section {
+        display: flex;
+        padding-top: 60px;
+    }
+
+    .ideas-block {
+        display: flex;
+    }
+
+    .nav {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding-right: 60px;
+        border-right: 4px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .nav-link {
+        margin-right: 0;
+        padding: 0;
+        margin-bottom: 30px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .ideas-about-block {
+        width: 51.27%;
+        padding-top: 0;
+        padding-left: 60px;
+    }
+
     .benefits-list {
         gap: 60px;
     }
@@ -106,6 +165,16 @@
 }
 
 @media (min-width: 1440px) {
+    .ideas-block-wrapper {
+        padding-right: 180px;
+        padding-left: 180px;
+    }
+
+    .ideas-about-block {
+        width: 57%;
+        align-self: center;
+    }
+
     .team-member-content {
         flex-shrink: 1;
     }
@@ -121,12 +190,34 @@
     .vis-img {
         display: flex;
     }
+
+    .popup {
+        max-width: 650px;
+    }
+
+    .main-popup-legend {
+        @include h2Font (38px, 46px);
+        padding-right: 73px;
+    }
 }
 
 @media (min-width: 1920px) {
     .wrapper {
         padding-left: 160px;
         padding-right: 160px;
+    }
+
+    .ideas-block-wrapper {
+        padding-right: 280px;
+        padding-left: 280px;
+    }
+
+    .nav {
+        overflow: unset;
+    }
+
+    .ideas-about-block {
+        width: 70%;
     }
 
     .team-member-photo {
@@ -138,35 +229,19 @@
     }
 
     .already-trust-links-block {
-        max-width: 1920px;
-        margin-left: auto;
-        margin-right: auto;
+        border-radius: 12px;
+        overflow: hidden;
     }
 
     .already-trust-links {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-bottom: 60px;
     }
 
-    .trust-link-hillel {
-        border-top-left-radius: 12px;
-        overflow: hidden;
-    }
-
-    .trust-link-3dlook {
-        border-top-right-radius: 12px;
-        overflow: hidden;
-    }
-
-    .trust-link-infratek {
-        border-bottom-left-radius: 12px;
-        overflow: hidden;
-    }
-
-    .trust-link-ultimate {
-        border-bottom-right-radius: 12px;
-        overflow: hidden;
+    .already-trust-wrapper {
+        max-width: 1720px;
+        margin-right: auto;
+        margin-left: auto;
     }
 }

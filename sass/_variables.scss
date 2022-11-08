@@ -19,6 +19,12 @@ $hoverLink: #F0145A;
     line-height: $h2Ln;
 }
 
+@mixin gradientTextColor {
+    background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 @mixin titleColorAndFont {
     background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
     -webkit-background-clip: text;
@@ -31,6 +37,12 @@ $hoverLink: #F0145A;
 @mixin borderRadiusShadow {
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
+}
+
+@mixin popupStyles {
+    border: 1px solid #fff;
+    border-radius: 8px;
+    background-color: #fff;
 }
 
 $partnerName: 'hillel', 'wannabiz', 'tapgerine';
@@ -54,5 +66,7 @@ $partnerColor: (
         background-color: $path;
     }
 }
+
+
 
 

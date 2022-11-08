@@ -1,0 +1,64 @@
+.ideas-block-wrapper {
+    padding-right: 30px;
+    padding-left: 30px;
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-section {
+    background: $mainBackgroundColor;
+}
+
+.ideas-block {
+    width: 100%;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+}
+
+.nav-link {
+    margin-right: 30px;
+    white-space: nowrap;
+    padding: 30px 0;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+    color: #B3B3BA;
+    text-decoration: none;
+
+    &:hover {
+        color: $hoverLink;
+    }
+
+    &:active {
+        @include gradientTextColor;
+    }
+}
+
+.active {
+    @include gradientTextColor;
+}
+
+.nav-link:last-child {
+    margin-right: 0;
+}
+
+.ideas-about-block {
+    padding-top: 30px
+}
+
+.ideas-about-title {
+    @include h2Font (20px, 24px);
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.ideas-about-text {
+    font-size: 19px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
