@@ -4,9 +4,13 @@
         padding-right: 60px;
     }
 
-    .ideas-block-wrapper {
-        padding-right: 60px;
+    .navigation-block {
         padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .header-top__content {
+        padding: 15px 60px;
     }
 
     .nav-link {
@@ -15,7 +19,9 @@
     }
 
     .ideas-about-block {
-        padding-top: 60px
+        padding-top: 60px;
+        margin-left: 60px;
+        margin-right: 60px
     }
 
     .ideas-about-title {
@@ -89,6 +95,86 @@
     .news-block-article-millennial {
         width: 100%;
     }
+
+    .contact-us {
+        align-items: flex-start;
+        position: relative;
+    }
+
+    .location {
+        display: flex;
+        flex-direction: row;
+        width: 50%;
+        align-items: baseline;
+    }
+
+    .location__street {
+        position: relative;
+        margin-right: 26px;
+    }
+
+    .location__street::after {
+        content: "";
+        width: 6px;
+        height: 6px;
+        background-color: #BDBDBD ;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        right: -16px;
+        transform: translateY(-50%);
+    }
+
+    .social-media {
+        position: relative;
+        margin-right: 26px;
+    }
+
+    .social-media::after {
+        content: "";
+        width: 6px;
+        height: 6px;
+        background-color: #BDBDBD ;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        right: -16px;
+        transform: translateY(-50%);
+    }
+
+    .tel--black {
+        margin-right: 26px;
+        position: relative;
+    }
+
+    .tel--black::after {
+        content: "";
+        width: 6px;
+        height: 6px;
+        background-color: #BDBDBD ;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        right: -16px;
+        transform: translateY(-50%);
+    }
+
+    .contact-info {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0;
+    }
+
+    .contact__email {
+        margin-bottom: 10px;
+    }
+
+    .property__text {
+        position: absolute;
+        top: 30px;
+        right: 0;
+    }
 }
 
 @media (max-width: 1023px) {
@@ -98,6 +184,14 @@
 }
 
 @media (min-width: 1024px) {
+    .header {
+        background-size: contain;
+    }
+    .ideas-block-wrapper {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
     .about-ideas-section {
         display: flex;
         padding-top: 60px;
@@ -115,6 +209,7 @@
         align-items: flex-end;
         padding-right: 60px;
         border-right: 4px solid rgba(255, 255, 255, 0.3);
+        overflow-x: hidden;
     }
 
     .nav-link {
@@ -131,6 +226,8 @@
         width: 51.27%;
         padding-top: 0;
         padding-left: 60px;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .benefits-list {
@@ -207,9 +304,22 @@
         padding-right: 160px;
     }
 
+    .navigation-block {
+        padding-left: 160px;
+        padding-right: 160px;
+    }
+
+    .header-top__content {
+        padding: 15px 160px;
+    }
+
     .ideas-block-wrapper {
         padding-right: 280px;
         padding-left: 280px;
+    }
+
+    .already-trust-block {
+        padding: 60px 0;
     }
 
     .nav {
@@ -222,10 +332,6 @@
 
     .team-member-photo {
         width: 60%;
-    }
-
-    .already-trust-link {
-        width: 430px;
     }
 
     .already-trust-links-block {

@@ -2,6 +2,30 @@ $mainBackgroundColor: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%,
 $linkColor: #24A3FF;
 $hoverLink: #F0145A;
 
+@mixin wrapper {
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@mixin closeButton {
+    background-image: url(../images/close-btn.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 32px;
+    height: 32px;
+    border: none;
+    padding: 0;
+    z-index: 5;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #E6E6F0;
+        border-radius: 8px;
+    }
+}
+
 @mixin regularLink {
     text-decoration: none;
     text-transform: uppercase;

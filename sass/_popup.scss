@@ -88,20 +88,11 @@
 }
 
 .close-button {
-    background-image: url(../images/close-btn.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 32px;
-    height: 32px;
+    @include closeButton;
     position: absolute;
     top: 30px;
     right: 27px;
-    border: none;
     background-color: #F5F5FA;
-    padding: 0;
-    z-index: 5;
-    cursor: pointer;
 
     &:hover {
         background-color: #E6E6F0;
