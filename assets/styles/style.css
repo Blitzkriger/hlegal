@@ -378,7 +378,6 @@ ul li {
 }
 
 .header {
-  min-height: 100vh;
   background-image: url(../images/main-background.svg);
   background-repeat: no-repeat;
   background-position: center;
