@@ -8,6 +8,18 @@ $hoverLink: #F0145A;
     margin-right: auto;
 }
 
+@mixin linkLangStyle {
+    padding: 5px 7px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    display: inline-block;
+    text-decoration: none;
+}
+
 @mixin closeButton {
     background-image: url(../images/close-btn.svg);
     background-repeat: no-repeat;
