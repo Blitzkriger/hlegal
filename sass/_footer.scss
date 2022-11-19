@@ -36,6 +36,10 @@
     text-decoration: none;
 }
 
+.location__map:hover {
+    color: $hoverLink;
+}
+
 .contact-info {
     display: flex;
     flex-direction: column;
@@ -60,6 +64,10 @@
     line-height: 20px;
     color: $linkColor;
     text-decoration: none;
+}
+
+.contact__email:hover {
+    color: $hoverLink;
 }
 
 .property__text {

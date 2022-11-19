@@ -1022,6 +1022,10 @@ ul li {
   text-decoration: none;
 }
 
+.location__map:hover {
+  color: #F0145A;
+}
+
 .contact-info {
   display: flex;
   flex-direction: column;
@@ -1046,6 +1050,10 @@ ul li {
   line-height: 20px;
   color: #24A3FF;
   text-decoration: none;
+}
+
+.contact__email:hover {
+  color: #F0145A;
 }
 
 .property__text {
