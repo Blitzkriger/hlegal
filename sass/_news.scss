@@ -17,10 +17,10 @@
     margin-bottom: 30px;
     border-radius: 8px;
     overflow: hidden;
-}
 
-.news-block-article:last-child {
-    margin-bottom: 0;
+    &:last-child {
+        margin-bottom: 0;
+    }
 }
 
 .news-block-img {
@@ -38,6 +38,14 @@
 
 .news-block-img-millennial {
     background-image: url(../images/millennial.jpg);
+}
+
+.news-block-img-language-law {
+    background-image: url(../images/language-law.jpg);
+}
+
+.news-block-img-kindergarden {
+    background-image: url(../images/kindergarden.jpg);
 }
 
 .news-block-content {

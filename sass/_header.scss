@@ -1,9 +1,36 @@
 .header {
-    background-image: url(../images/main-background.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    padding-bottom: 60px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    background: $mainBackgroundColor;
+    border-radius: 0px 0px 12px 12px;
+
+    &::before {
+        content: "";
+        height: 10px;
+        background-color: #CACADB;
+        @include borderRadiusShadow;
+        display: flex;
+        position: absolute;
+        bottom: -10px;
+        left: 20px;
+        right: 20px;
+
+    }
+
+    &::after {
+        content: "";
+        height: 10px;
+        background-color: #E7E7F2;
+        @include borderRadiusShadow;
+        display: flex;
+        position: absolute;
+        bottom: -20px;
+        left: 40px;
+        right: 40px;
+    }
 }
 
 .header__content {
@@ -11,6 +38,11 @@
     flex-direction: column;
     justify-content: space-between;
     min-height: 100vh;
+    background-image: url(../images/main-background.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 30px;
 }
 
 .header-top__mobile {
@@ -25,6 +57,24 @@
     padding: 15px 15px;
     @include wrapper;
     background: rgba(245, 245, 250, 0.2);
+}
+
+.lang {
+    @include linkLangStyle;
+}
+
+.lang:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+}
+
+.lang--gray {
+    color: $headerWhiteTextColor;
+}
+
+.lang--gray:hover {
+
+    background-color: #F5F5FA;
 }
 
 .header-top__input {
@@ -101,8 +151,9 @@
     align-items: center;
     background: #FFFFFF;
     border-radius: 12px 12px 0px 0px;
-    min-width: 359px;
-    padding: 64px 0 7px 0;
+    max-width: 359px;
+    width: 100%;
+    padding: 64px 12px 7px 12px;
     position: absolute;
     bottom: 0;
     right: 50%;
@@ -119,7 +170,7 @@
     background: #F5F5FA;
     border-radius: 12px;
     padding: 7px 0;
-    min-width: 335px;
+    width: 100%;
     margin-bottom: 15px;
 }
 
@@ -175,6 +226,7 @@
     @include h2Font (38px,46px);
     text-align: center;
     color: #FFFFFF;
+    transform: translateY(-10px);
 }
 
 .header__scroll-button {
@@ -190,4 +242,6 @@
 .header__scroll-button-svg:hover circle {
     stroke: $hoverLink;
 }
+
+
 

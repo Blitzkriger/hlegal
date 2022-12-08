@@ -1,0 +1,87 @@
+.header__service-entry {
+    display: inline-block;
+}
+
+.header-services {
+    display: inline-block;
+}
+ 
+ .benefit__servises {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.benefits__services {
+    margin-bottom: 30px;
+}
+
+.benefit-list-link__servises {
+    @include titleColorAndFont;
+}
+
+.benefit-list-text__services {
+    margin-bottom: 28px;
+    font-size: 19px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.entry__button {
+    background: $linkColor;
+    box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+    border-radius: 12px;
+    border: none;
+    color: #fff;
+    @include h2Font (16px, 20px);
+    padding: 18px 30px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #0085FF;       
+    }
+
+    &:active {
+        background: #006CCF;
+    }
+}
+
+.services-area {
+    border-top: 4px solid rgba(255, 255, 255, 0.5);
+    padding-top: 30px;
+}
+
+.services-area__about {
+    margin: 30px 0;
+    width: 100%;
+}
+
+.services-area__title {
+    @include h2Font (22px, 27px);
+    color: #fff;
+}
+
+.services-area__about-lists {
+    padding: 0 15px;
+}
+
+.services-area__about-list {
+    color: #fff;
+    font-size: 18px;
+    line-height: 26px;
+    list-style-type: disc;
+    margin-bottom: 15px;
+
+    &::marker {
+        color: $hoverLink;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+
+

@@ -1,0 +1,112 @@
+.contact__information {
+    padding: 40px 0 30px 0;
+}
+
+.contact__form {
+    background-color: #F5F5FA;
+    padding: 30px;
+    min-width: 315px;
+    border-radius: 12px;
+}
+
+.contact__form input {
+    @include popupStyles;
+    padding: 15px;
+    width: 100%;
+
+    &::placeholder {
+        font-size: 16px;
+        line-height: 26px;
+        color: #B3B3BA;
+    }
+
+    &:focus {
+        border: 1px solid $linkColor;
+        outline: 0;
+    }
+}
+
+.location__street-contact {
+    margin-bottom: 5px;
+    @include textSize (21px, 30px);
+    color: #323264;
+}
+
+.location__street-contact:last-child {
+    margin-bottom: 0px;
+}
+
+.contact__street {
+    border-bottom: 4px solid #E6E6F0;
+    padding-bottom: 30px;
+}
+
+.contact__web-info {
+    border-bottom: 4px solid #E6E6F0;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tel--black-regular {
+    @include textSize (21px, 30px);
+    color: #46466E;
+    text-decoration: none;
+}
+
+.contact__email-link {
+    text-decoration: none;
+    @include textSize (21px, 30px);
+    color: $linkColor;
+}
+
+.contact__email-link:hover {
+    color: $hoverLink;
+}
+
+.contact__social {
+    margin: 30px 0;
+}
+
+.social-media-link {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 155px;
+    align-items: center;
+
+    &:hover{
+        color: $hoverLink;
+    }
+
+    svg {
+        margin-right: 10px;
+    }
+}
+
+.social-media-link:hover > svg path {
+    fill: $hoverLink;
+}
+
+.social-media__link-text {
+    @include h2Font (12px, 16px);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $linkColor;
+    align-self: center;
+    margin-left: 10px;
+
+    &:hover {
+        color: $hoverLink;
+    }
+}
+
+.social-media__link-span {
+    display: flex;
+    width: 106px;
+}
+
+.contact-us__footer {
+    border-top: none;
+}

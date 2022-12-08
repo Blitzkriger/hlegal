@@ -39,6 +39,11 @@
         line-height: 26px;
         color: #B3B3BA;
     }
+
+    &:focus {
+        border: 1px solid $linkColor;
+        outline: 0;
+    }
 }
 
 .input-info-name {
@@ -57,6 +62,20 @@
         line-height: 26px;
         color: #B3B3BA;
     }
+
+    &:focus {
+        border: 1px solid $linkColor;
+        outline: 0;
+    }
+
+    &:invalid {
+        border: 1px solid $hoverLink;
+        outline: 0;
+    }
+}
+
+fieldset {
+    border: 0;
 }
 
 .popup-legend {
@@ -85,6 +104,14 @@
     width: 100%;
     padding: 18px 0;
     cursor: pointer;
+
+    &:hover {
+        background-color: #0085FF;       
+    }
+
+    &:active {
+        background: #006CCF;
+    }
 }
 
 .close-button {

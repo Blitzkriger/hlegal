@@ -1,3 +1,11 @@
+.our-team {
+    margin-bottom: 60px;
+}
+
+.our-team__entry {
+    margin-bottom: 0;
+}
+
 .team-member {
     background-color: #F5F5FA;
     border-radius: 12px;
@@ -58,6 +66,10 @@
     height: 12px;
     border-radius: 100%;
     cursor: pointer;
+
+    &:hover {
+        transform: scale(1.2);
+    }
 }
 
 .team-member-button:last-child {

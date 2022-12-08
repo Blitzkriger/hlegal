@@ -1,6 +1,8 @@
 $mainBackgroundColor: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
 $linkColor: #24A3FF;
 $hoverLink: #F0145A;
+$headerWhiteTextColor: #B3B3BA;
+$whiteBackTextColor: #323264;
 
 @mixin wrapper {
     max-width: 1920px;
@@ -55,6 +57,11 @@ $hoverLink: #F0145A;
     line-height: $h2Ln;
 }
 
+@mixin textSize ($pFn, $pLn) {
+    font-size: $pFn;
+    line-height: $pLn;
+}
+
 @mixin gradientTextColor {
     background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
     -webkit-background-clip: text;
@@ -102,6 +109,22 @@ $partnerColor: (
         background-color: $path;
     }
 }
+
+$memberPhoto: (
+    'oleksandrovsky': url(../images/member-oleksandrovsky.jpg),
+    'patrikov': url(../images/member-patrikov.jpg),
+    'melnik': url(../images/member-melnik.jpg),
+    'binn': url(../images/member-binn.jpg),
+    'kobzar': url(../images/member-kobzar.jpg),
+    'wolk': url(../images/member-wolk.jpg),
+);
+
+@each $name, $path in $memberPhoto {
+    .member-#{$name} {
+        background-image: $path;
+    }
+}
+
 
 
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,28 +7,19 @@
     <meta name="keywords" content="Юристы,помощь,закон,поддержка.">
     <meta name="description" content="Юридическая поддержка бизнеса.">
     <title>hlegal services </title>
+    <link rel="icon" href="./assets/images/favicon.ico">
     <link rel="stylesheet" href="./assets/fonts/stylesheet.css">
     <link rel="stylesheet" href="./assets/styles/style.css">
 </head>
 <body>
-  <section class="main-section">
     <header class="header">
         <div class="header__content">
           <div class="header-top__mobile">
               <div class="header-top__content">
-                <div class="header-top__language">
-                  <input type="radio" name="lang" value="Ukr" class="header-top__input" id="lang-value1">
-                  <label class="header-top__button" for="lang-value1">
-                    Ук
-                  </label>
-                  <input type="radio" name="lang" value="Rus" class="header-top__input" id="lang-value2">
-                  <label class="header-top__button" for="lang-value2">
-                    Ру
-                  </label>
-                  <input type="radio" name="lang" value="Eng" class="header-top__input" id="lang-value3" checked>
-                  <label class="header-top__button" for="lang-value3">
-                    En
-                  </label>
+                <div class="header-top__lang">
+                  <a href="" class="lang">Ук</a>
+                  <a href="" class="lang">Ру</a>
+                  <a href="" class="lang active--link-lang">En</a>
                 </div>
                 <div class="header-top__contact">
                   <a href="tel:0800211927" class="header-top__tel">
@@ -38,7 +29,7 @@
               </div>
               <div class="navigation-block">
                 <div class="navigation-content">
-                  <a href="" class="logo">
+                  <a href="index.html" class="logo">
                     <img src="./assets/images/logo-header.svg" alt="logo">
                   </a>
                   <span class="navigation-content__span">
@@ -54,11 +45,11 @@
                   </button>
                   <div class="navigation__layer">
                     <nav class="navigation">
-                      <a href="" class="navigation__link">about us</a>
-                      <a href="" class="navigation__link">послуги</a>
-                      <a href="" class="navigation__link">команда</a>
-                      <a href="" class="navigation__link navigation__link--red">публiкацii</a>
-                      <a href="" class="navigation__link">контакти</a>
+                      <a href="./pages/about.html" class="navigation__link">about us</a>
+                      <a href="./pages/services.html" class="navigation__link">послуги</a>
+                      <a href="./pages/team.html" class="navigation__link">команда</a>
+                      <a href="./pages/publications.html" class="navigation__link">публiкацii</a>
+                      <a href="./pages/contacts.html" class="navigation__link">контакти</a>
                       <button type="button" class="close-button-nav"></button>
                     </nav>
                   </div>
@@ -71,7 +62,7 @@
                 <div class="header-top__lang">
                   <a href="" class="lang">Ук</a>
                   <a href="" class="lang">Ру</a>
-                  <a href="" class="lang">En</a>
+                  <a href="" class="lang active--link-lang">En</a>
                 </div>
                   <p class="header-location__street header-location__street--gray">
                     Kyiv, Mechnikova str., 14/1
@@ -79,19 +70,21 @@
                   <a href="tel:0800211927" class="header-top__tel tel--white">
                     0800 211 927
                   </a>
-                  <a href="" class="header__social-media">
-                    <img src="./assets/images/fb-logo-white.svg" alt="Facebook">
+                  <a href="" class="header__social-media fb-logo--hover">
+                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M24 12.5733C24 5.90541 18.6274 0.5 12 0.5C5.37258 0.5 0 5.90541 0 12.5733C0 18.5995 4.38823 23.5943 10.125 24.5V16.0633H7.07813V12.5733H10.125V9.91343C10.125 6.88755 11.9165 5.21615 14.6576 5.21615C15.9705 5.21615 17.3438 5.45195 17.3438 5.45195V8.42313H15.8306C14.3399 8.42313 13.875 9.35379 13.875 10.3086V12.5733H17.2031L16.6711 16.0633H13.875V24.5C19.6118 23.5943 24 18.5995 24 12.5733Z" fill="white"/>
+                    </svg>
                   </a>
               </div>
-                <a href="" class="logo__desktop">
+                <a href="index.html" class="logo__desktop">
                   <img src="./assets/images/logo-desktop.svg" alt="logo">
                 </a>
                 <nav class="header__navigation">
-                  <a href="" class="nav__link">about us</a>
-                  <a href="" class="nav__link">services</a>
-                  <a href="" class="nav__link">team</a>
-                  <a href="" class="nav__link">publications</a>
-                  <a href="" class="nav__link">contact</a>
+                  <a href="./pages/about.html" class="nav__link">about us</a>
+                  <a href="./pages/services.html" class="nav__link">services</a>
+                  <a href="./pages/team.html" class="nav__link">team</a>
+                  <a href="./pages/publications.html" class="nav__link">publications</a>
+                  <a href="./pages/contacts.html" class="nav__link">contact</a>
                 </nav>
             </div>
           </div>
@@ -112,8 +105,6 @@
               </svg>
           </button>
         </div>
-    </header>
-  <main class="main">
       <h2 class="hide">hide</h2>
       <section class="about-ideas-section">
         <h2 class="hide">hide</h2>
@@ -137,10 +128,10 @@
         </div>
       </section>
       <section class="opportunities">
-        <h2 class="hide"></h2>
+        <h2 class="hide">hide</h2>
           <div class="wrapper">
             <div class="services">
-              <a href="" class="services-link main-link">Services</a>
+              <a href="./pages/services.html" class="services-link main-link">Services</a>
               <h2 class="about">What can we do better than others?</h2>
             </div>
             <div class="benefits">
@@ -149,56 +140,57 @@
                   <div class="benefit-list-image">
                     <img src="./assets/images/ecommerce.png" alt="Ecommerce" class="benefit-list-img">
                   </div>
-                  <a href="" class="benefit-list-link">IT and e-commerce</a>
+                  <a href="./pages/service-entry.html" class="benefit-list-link">IT and e-commerce</a>
                   <p class="benefit-list-text">An endless stream of contracts, tax issues, labor relations, corporate papers - legal work distracts you from doing business. But there is not much work to do to hire an in-house lawyer.</p>
                 </div>
                 <div class="benefit-list">
                   <div class="benefit-list-image">
                     <img src="./assets/images/support.png" alt="Support" class="benefit-list-img">
                   </div>
-                  <a href="" class="benefit-list-link">Comprehensive daily legal support</a>
+                  <a href="./pages/service-entry.html" class="benefit-list-link">Comprehensive daily legal support</a>
                   <p class="benefit-list-text">In addition, over time, the work will become the same type and uninteresting for a full-time lawyer. And we know very well how difficult it is to find a good candidate with experience in the field of information technology in Ukraine.</p>
                 </div>
                 <div class="benefit-list">
                   <div class="benefit-list-image">
                     <img src="./assets/images/coprorate.png" alt="Corporate" class="benefit-list-img">
                   </div>
-                  <a href="" class="benefit-list-link">Structuring corporate relationships</a>
+                  <a href="./pages/service-entry.html" class="benefit-list-link">Structuring corporate relationships</a>
                   <p class="benefit-list-text">Instead of just providing legal services, we will hire a lawyer or a whole team that will fit into the daily life of your company.</p>
                 </div>
                 <div class="benefit-list">
                   <div class="benefit-list-image">
                     <img src="./assets/images/trust.png" alt="Trust" class="benefit-list-img">
                   </div>
-                  <a href="" class="benefit-list-link">Building contractual relations</a>
+                  <a href="./pages/service-entry.html" class="benefit-list-link">Building contractual relations</a>
                   <p class="benefit-list-text">Once a week, or week after month, you have your own lawyer by your side. Anyone in the company can catch it at the coffee maker and just talk about current affairs instead of waiting for update status.</p>
                 </div>
                 <div class="benefit-list">
                   <div class="benefit-list-image">
                     <img src="./assets/images/protection.png" alt="Protection" class="benefit-list-img">
                   </div>
-                  <a href="" class="benefit-list-link">Protection of business, intellectual property</a>
+                  <a href="./pages/service-entry.html" class="benefit-list-link">Protection of business, intellectual property</a>
                   <p class="benefit-list-text">And all the other time he will work on new diverse projects, so he will definitely not stop in professional development. One way or another, all Axon Partners will work for you instead of a corporate lawyer.</p>
                 </div>
                 <div class="benefit-list">
                   <div class="benefit-list-image">
                     <img src="./assets/images/court.png" alt="Court" class="benefit-list-img">
                   </div>
-                  <a href="" class="benefit-list-link">Judicial representation</a>
+                  <a href="./pages/service-entry.html" class="benefit-list-link">Judicial representation</a>
                   <p class="benefit-list-text">Is it a small, medium-sized company or a market leader? Local business or multinational company? Do you have your own legal department or not?</p>
                 </div>
               </div>
             </div>
           </div>
       </section>
-    </section>
+  </header>
+    <main class="main">
     <section class="our-team">
-      <h2 class="hide"></h2>
+      <h2 class="hide">hide</h2>
       <div class="wrapper">
         <article class="team-member">
           <div class="team-member-photo"></div>
           <div class="team-member-content">
-            <a href="" class="team-link main-link">Команда</a>
+            <a href="./pages/team.html" class="team-link main-link">Команда</a>
             <h2 class="team-member-quote">
               Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.
             </h2>
@@ -209,7 +201,7 @@
           </div>
         </article>
         <div class="team-member-buttons">
-          <button class="team-member-button team-member-button-active popup-button"></button>
+          <button class="team-member-button team-member-button-active"></button>
           <button class="team-member-button"></button>
           <button class="team-member-button"></button>
         </div>
@@ -233,7 +225,7 @@
                 <img src="./assets/images/tapgerine-logo.png" alt="Tapgerine" width="179" height="44">
               </a>
               <a href="" class="already-trust-link trust-link-3dlook">
-                <img src="./assets/images/3dlook-logo.png" alt="3Dlook" width="180" height="42px">
+                <img src="./assets/images/3dlook-logo.png" alt="3Dlook" width="180" height="42">
               </a>
               <a href="" class="already-trust-link trust-link-orangear">
                 <img src="./assets/images/orangear-logo.png" alt="Orangear" width="174" height="44">
@@ -262,41 +254,45 @@
               </a>
           </div>
         </div>
+      </div>  
     </section>
     <section class="news">
       <div class="wrapper">
         <div class="news-title">
-          <a href="" class="news-link main-link">Publications</a>
+          <a href="./pages/publications.html" class="news-link main-link">Publications</a>
           <h2 class="news-about-title">We have something to tell</h2>
         </div>
         <div class="news-blocks">
           <article class="news-block-article">
+            <h2 class="hide">hide</h2>
             <div class="news-block-img"></div>
             <div class="news-block-content">
-              <a href="" class="news-block-link">Equity associate</a>
-              <p class="news-block-time"><time datetime="22-04">April 22</time></p>
+              <a href="./pages/publications-entry.html" class="news-block-link">Equity associate</a>
+              <p class="news-block-time"><time datetime="04-22">April 22</time></p>
               <p class="news-block-about">
                 I'm a jun on projects. I am a co-owner of a law firm. How it happened. Before entering my parents told me that if I…
               </p>
             </div>
           </article>
           <article class="news-block-article">
+            <h2 class="hide">hide</h2>
             <div class="news-block-img news-block-img-gdpr"></div>
             <div class="news-block-content">
-              <a href="" class="news-block-link">
+              <a href="./pages/publications-entry.html" class="news-block-link">
                 Penalty for the Good Corporation: what will happen to Google and others for violating the GDPR
               </a>
-              <p class="news-block-time"><time datetime="29-09">September 29</time></p>
+              <p class="news-block-time"><time datetime="09-29">September 29</time></p>
               <p class="news-block-about">
                 And why the recovery of 50 million euros could be a fateful precedent According to Mind.ua January 21 National Commission for Data Protection.
               </p>
             </div>
           </article>
           <article class="news-block-article news-block-article-millennial">
+            <h2 class="hide">hide</h2>
             <div class="news-block-img news-block-img-millennial"></div>
             <div class="news-block-content">
-              <a href="" class="news-block-link">Millennial Testament</a>
-              <p class="news-block-time"><time datetime="19-08">August 19</time></p>
+              <a href="./pages/publications-entry.html" class="news-block-link">Millennial Testament</a>
+              <p class="news-block-time"><time datetime="08-19">August 19</time></p>
               <p class="news-block-about">
                 What and how modern vloggers, opinion leaders and crypto-millionaires will inherit A typical legacy of the Ukrainian generation X looks like this: an apartment in…
               </p>
@@ -309,6 +305,7 @@
   <footer class="footer">
     <div class="wrapper">
       <section class="contact-us">
+        <h2 class="hide">hide</h2>
         <div class="location">
           <p class="location__street">
             Kyiv, Mechnikova str., 14/1
@@ -318,7 +315,16 @@
         <div class="empty__block"></div>
         <div class="contact-info">
           <a href="" class="social-media">
-            <img src="./assets/images/facebook-icon-footer.svg" alt="Facebook">
+            <svg width="39" height="38" viewBox="0 0 39 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_69735_340)">
+              <path d="M38.5 19.1161C38.5 8.55857 29.9934 0 19.5 0C9.00658 0 0.5 8.55857 0.5 19.1161C0.5 28.6575 7.44803 36.5659 16.5312 38V24.6419H11.707V19.1161H16.5312V14.9046C16.5312 10.1136 19.3678 7.46723 23.7078 7.46723C25.7866 7.46723 27.9609 7.84059 27.9609 7.84059V12.545H25.5651C23.2048 12.545 22.4688 14.0185 22.4688 15.5302V19.1161H27.7383L26.8959 24.6419H22.4688V38C31.552 36.5659 38.5 28.6575 38.5 19.1161Z" fill="#24A3FF"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_69735_340">
+              <rect width="38" height="38" fill="white" transform="translate(0.5)"/>
+              </clipPath>
+              </defs>
+              </svg>
           </a>
           <a href="tel:0800211927" class="header-top__tel tel--black">
             0800 211 927
@@ -333,44 +339,8 @@
       </section>
     </div>
   </footer>
-  <div class="layer">
-    <form action="https://fom.in.ua/echo" class="popup">
-      <legend class="main-popup-legend">
-        We would like to help you
-      </legend>
-      <div class="input-info">
-        <input type="text" name="name" placeholder="Name" class="input-info-name" required>
-        <textarea name="message" placeholder="Message" class="input-info-message"></textarea>
-      </div>
-      <div class="input-contact-to">
-        <legend class="popup-legend">
-          How to answer you?
-        </legend>
-        <input type="tel" name="tel" placeholder="Phone number" class="input-contact-to-tel">
-        <input type="email" name="email" placeholder="Email" class="input-contact-to-email" required>
-      </div>
-      <button type="submit" class="send-button">
-        Send message
-      </button>
-      <button type="button" class="close-button"></button>
-    </form>
-  </div>
 
   <script>
-
-    const layer = document.querySelector('.layer');
-    const openLink = document.querySelector('.popup-button');
-    const closeButton = document.querySelector('.close-button');
-
-    openLink.addEventListener('click', () => {
-      layer.classList.add('layer-show');
-    })
-
-    closeButton.addEventListener('click', () => {
-      layer.classList.remove('layer-show');
-    })
-
-
 
     const navLayer = document.querySelector('.navigation__layer');
     const openNavButton = document.querySelector('.navigation-content__button');

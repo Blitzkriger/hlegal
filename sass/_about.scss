@@ -1,0 +1,164 @@
+.about-company {
+    margin: 30px 0 60px 0;
+}
+
+.achievements__about {
+    margin-bottom: 30px;
+}
+
+.achievements__title {
+    margin-bottom: 28px;
+}
+
+.achievements__text {
+    @include textSize (19px, 30px);
+    margin-bottom: 20px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.achievements__numbers {
+    border-left: 4px solid #E6E6F0;
+    padding-left: 30px;
+    margin-bottom: 30px;
+    display: inline-block;
+}
+
+.number {
+    @include h2Font (36px, 44px);
+    @include gradientTextColor;
+    padding-left: 35px;
+    margin-bottom: 10px;
+    display: block;
+    position: relative;
+
+    &::before {
+        content: "";
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: block;
+        width: 25px;
+        height: 26px;
+        position: absolute;
+        top: 10px;
+        left: 0;
+    }
+}
+
+.flag::before {
+    background-image: url(../images/flag.svg);
+}
+
+.bag::before {
+    background-image: url(../images/bag.svg);
+}
+
+.star::before {
+    background-image: url(../images/star.svg);
+}
+
+.number-discription {
+    @include textSize (16px, 20px);
+    color: $whiteBackTextColor;
+    margin-bottom: 40px;
+    display: inline-block;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.team__wrapper {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.team__pic {
+    background-image: url(../images/team.avif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 114px;
+    position: relative;
+}
+
+.team__pic-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @include h2Font (36px, 44px);
+    text-align: center;
+    letter-spacing: 13px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    opacity: 0.8;
+    text-shadow: 0px 15px 30px rgba(40, 40, 86, 0.8);
+}
+
+.about__history {
+    margin-top: 30px;
+}
+
+.about__history-text {
+    margin-bottom: 25px;
+    @include textSize (19px, 30px);
+    color: #000000;
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+.about__history-title {
+    margin-top: 30px;
+}
+
+.awards {
+    background-color: #F5F5FA;
+    padding-top: 30px;
+}
+
+.awards__title {
+    margin-bottom: 30px;
+    @include h2Font (14px, 17px);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $whiteBackTextColor;
+    text-align: center;
+}
+
+.awards__border {
+    border-bottom: 4px solid #E6E6F0;
+    padding-top: 30px;
+}
+
+.awards__img {
+    height: 40px;
+}
+
+.awards__items-container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.awards-item {
+    background-color: #fff;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    margin-bottom: 30px;
+
+    &:nth-child(n+2) {
+        display: none;
+    }
+}

@@ -1,3 +1,13 @@
 .header-top__desktop {
     display: none;
 }
+
+.header-desktop__wrapper {
+    display: none;
+}
+
+.header-top__lang .active--link-lang {
+    background-color: $hoverLink;
+    border-radius: 8px;
+    color: #fff;
+}

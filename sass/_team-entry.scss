@@ -1,0 +1,59 @@
+.team-member-photo__etnry {
+    background-image: url(../images/member-kobzar.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 375px;
+    border-radius: 12px;
+    display: inline-block;
+}
+
+.team-member-social {
+    display: flex;
+    @include textSize (16px, 20px);
+    color: $linkColor;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.team-member-social:hover {
+    color: $hoverLink;
+}
+
+.team-member__position {
+    @include textSize (14px, 22px);
+    color: $headerWhiteTextColor;
+}
+
+.team-member__entry-content {
+    margin: 30px 0;
+}
+
+.team-member__entry {
+    background-color: #fff;
+}
+
+.team-member-name {
+    margin-bottom: 15px;
+    @include h2Font (38px, 46px);
+}
+
+.team-member__about {
+    margin: 30px 0;
+    border-top: 4px solid #E6E6F0;
+}
+
+.team-member__title {
+    margin-top: 30px;
+    @include h2Font (14px, 17px);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #323264;
+}
+
+.team-member__info {
+    margin-top: 20px;
+    @include textSize (16px, 26px);
+    color: #000000;
+}

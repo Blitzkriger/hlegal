@@ -4,11 +4,23 @@
         padding-right: 60px;
     }
 
+    .header {
+        margin-bottom: 80px;
+    }
+
     .header-top__mobile {
         display: none;
     }
 
+    .header__title {
+        transform: translateY(-60px);
+    }
+
     //header-desktop//
+
+    .header__content-publications {
+        padding-bottom: 60px;
+    }
 
     .header-top__desktop {
         padding-top: 50px;
@@ -19,6 +31,7 @@
     .header-desktop__wrapper {
         padding-left: 60px;
         padding-right: 60px;
+        display: flex;
     }
     
     .header-top__stay-in-touch {
@@ -40,7 +53,7 @@
         border-radius: 50%;
         position: absolute;
         top: 50%;
-        right: -9px;
+        right: -12px;
         transform: translateY(-50%);
     }
     
@@ -81,15 +94,6 @@
         transform: translateY(-50%);
     }
     
-    .lang {
-        @include linkLangStyle;
-    }
-    
-    .lang:hover {
-        background: $hoverLink;
-        border-radius: 8px;
-    }
-    
     .logo__desktop {
         margin: 30px 0;
         display: flex;
@@ -97,6 +101,33 @@
     
     .header__navigation {
         display: flex;
+    }
+
+    .desktop__content {
+        align-items: center;
+    }
+
+    .desktop--span {
+        align-items: flex-start;
+        width: 21px;
+        height: 47px;
+        font-size: 47px;
+        line-height: 33px;
+        margin-left: 10px;
+    }
+
+    .desktop--breadcrumb {
+        align-self: center;
+        @include textSize (36px, 44px);
+        margin-top: -15px;
+    }
+
+    .breadcrumb--violet {
+        color: $whiteBackTextColor;
+    }
+
+    .fb-logo--hover:hover path {
+        fill: $hoverLink;
     }
     
     .nav__link {
@@ -107,11 +138,31 @@
         line-height: 20px;
         color: #FFFFFF;
         margin-right: 15px;
+        border-bottom: 2px solid transparent;
+        padding-bottom: 3px;
     }
     
     .nav__link:last-child {
         margin-right: 0;
     }
+
+    .nav__link--blue {
+        color: $linkColor;
+    }
+
+    .header__navigation .nav__link--blue:hover {
+        border-color: $linkColor;
+    }
+
+    .nav__link:hover {
+        border-color: #fff;
+    }
+
+    .active__link--red {
+        color: $hoverLink;
+        border-color: $hoverLink;
+    }
+
 
     //end//
 
@@ -145,6 +196,21 @@
 
     .services {
         margin-bottom: 60px;
+    }
+
+    .services-area__block {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .services-area__about {
+        margin: 30px 0;
+        width: calc(48% - 30px);
+    }
+
+    .benefit-list-link__servises {
+        @include h2Font (38px, 46px);
     }
 
     .about {
@@ -199,12 +265,45 @@
         flex-wrap: wrap;
     }
 
+    .news-block-entry-title {
+        @include h2Font (30px, 37px);
+    }
+
+    .news-entry__content-title  {
+        @include h2Font (38px, 46px);
+    }
+
+    .listing__title {
+        @include h2Font (22px, 27px);
+    }
+
+    .news-bottom__title {
+        @include h2Font (22px, 27px);
+    }
+
     .news-block-article  {
         width: calc(50% - 15px);
+
+        &:last-child {
+            margin-bottom: 30px;
+        }
+    }
+
+    .main__news-block-img {
+        height: 500px;
     }
 
     .news-block-article-millennial {
         width: 100%;
+    }
+
+    .news__banner-img {
+        height: 398px;
+        width: 640px;
+    }
+
+    .millennial--width {
+        width: calc(50% - 15px);
     }
 
     .contact-us {
@@ -281,10 +380,120 @@
         margin-bottom: 10px;
     }
 
-    .property__text {
+    .property {
         position: absolute;
         top: 30px;
         right: 0;
+    }
+
+    .team-entry__block {
+        display: grid;
+        grid-template-columns: 300px 1fr;
+    }
+
+    .team-member__about {
+        grid-column-start: 3;
+        grid-column-end: 1;
+        margin-bottom: 60px;
+    }
+
+    .team-member-photo__etnry {
+        width: 100%;
+    }
+
+    .team-member__entry-content {
+        align-self: center;
+        margin: 0 0 0 30px;
+    }
+
+    .members {
+        padding-top: 0;
+    }
+
+    .member-listing__item {
+        width: calc(50% - 30px);
+        margin-bottom: 0;
+    }
+
+    .member-listing__photo {
+        height: 400px;
+    }
+
+    .member-listing__title{
+        margin-bottom: 60px;
+    }
+
+    .member-listing {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 60px;
+    }
+
+    .member-listing__name .arrow--rotate {
+        transform: rotate(0);
+    }
+
+    .hide--element {
+        display: none;
+    }
+
+    .about-company {
+        margin-top: 0;
+    }
+
+    .about__history {
+        margin-top: 60px;
+    }
+
+    .achievements__numbers {
+        margin-bottom: 60px;
+    }
+
+    .team__pic {
+        height: 234px;
+    }
+
+    .team__pic-title {
+        @include h2Font (46px, 56px);
+        letter-spacing: 63px;
+    }
+
+    .awards__items-container {
+        flex-direction: row;
+        column-gap: 40px;
+    }
+
+    .awards-item {
+        width: 25%;
+
+        &:nth-child(n+2) {
+            display: flex;
+        }
+    }
+
+    .legal500 {
+        width: 53px;
+    }
+    
+    .legal {
+        width: 106px;
+    }
+
+    .market-leaders {
+        width: 130px;
+    }
+
+    .ulf {
+        width: 110px;
+    }
+
+    .awards__items-container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .team-member-button:nth-child(n+4) {
+        display: none;
     }
 }
 
@@ -295,13 +504,17 @@
 }
 
 @media (min-width: 1024px) {
-    .header {
+    .header__content {
         background-size: contain;
     }
 
     .header-top__desktop {
         display: grid;
         grid-template-columns: 140px 1fr 500px;
+    }
+
+    .header__title {
+        transform: translateY(-10px);
     }
 
     .logo__desktop {
@@ -315,10 +528,6 @@
         grid-column: 3;
         justify-content: flex-end;
         margin-top: -20px;
-    }
-
-    .nav__link:hover {
-        color: $hoverLink;
     }
 
     .header-top__stay-in-touch {
@@ -344,6 +553,10 @@
 
     .ideas-block {
         display: flex;
+    }
+
+    .desktop__content {
+        width: 324px;
     }
 
     .nav {
@@ -404,9 +617,114 @@
     .news-block-article  {
         width: calc(33.33% - 20px);
     }
+
+    .contact__information {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .contact__info-to-connect {
+        width: calc(50% - 30px);
+    }
+
+    .contact-to-us {
+        width: 48%;
+    }
+
+    .team-entry__block {
+        grid-template-columns: 300px 60px 1fr;
+        grid-template-rows: 140px;
+        grid-template-areas: 
+        "photo . name "
+        ". . about";
+    }
+
+    .team-member-photo__etnry {
+        grid-area: photo;
+    }
+
+    .team-member__entry-content {
+        grid-area: name;
+        margin: 0;
+    }
+
+    .team-member__about {
+        grid-area: about;
+    }
+
+    .member-listing__item {
+        width: calc(33.33% - 40px);
+    }
+
+    .achievements {
+        display: flex;
+        margin-bottom: 60px;
+    }
+
+    .achievements__about {
+        width: 54%;
+        margin-right: 30px;
+        margin-bottom: 0;
+    }
+
+    .achievements__numbers {
+        margin-bottom: 148px;
+        width: 354px;
+    }
+
+    .team__pic {
+        height: 311px;
+    }
+
+    .team__pic-title {
+        @include h2Font (86px, 105px);
+    }
+
+    .about__history {
+        display: flex;
+    }
+
+    .abiut__history-block-text {
+        width: 52%;
+        margin-right: 60px;
+    }
+
+    .about__history-title {
+        width: 362px;
+        margin-top: 0;
+    }
+
+    .legal500 {
+        width: 80px;
+    }
+    
+    .legal {
+        width: 159px;
+    }
+
+    .market-leaders {
+        width: 195px;
+    }
+
+    .ulf {
+        width: 166px;
+    }
+
+    .awards__img {
+        height: 60px;
+    }
+
+    .awards-item {
+        height: 110px;
+    }
 }
 
 @media (min-width: 1440px) {
+    .services__wrapper {
+        padding-left: 180px;
+        padding-right: 180px;
+    }
+
     .ideas-block-wrapper {
         padding-right: 180px;
         padding-left: 180px;
@@ -433,6 +751,10 @@
         display: flex;
     }
 
+    .contact-to-us {
+        max-width: 650px;
+    }
+
     .popup {
         max-width: 650px;
     }
@@ -441,12 +763,93 @@
         @include h2Font (38px, 46px);
         padding-right: 73px;
     }
+
+    .contact-popup__ledend {
+        @include h2Font (30px, 37px);
+        padding-right: 0;
+    }
+
+    .employee__info {
+        display: flex;
+        align-items: center;
+        gap: 26px;
+    }
+
+    .team-member-photo__etnry {
+        height: 500px;
+    }
+
+    .team-member-social {
+        margin: 0;
+    }
+
+    .team-member__position {
+        position: relative;
+
+        &::after {
+            content: "";
+            width: 6px;
+            height: 6px;
+            background-color: #BDBDBD ;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            right: -16px;
+            transform: translateY(-50%);
+        }
+    }
+
+    .team-member-social {
+        position: relative;
+
+        &:not(:last-child)::after {
+            content: "";
+            width: 6px;
+            height: 6px;
+            background-color: #BDBDBD ;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            right: -16px;
+            transform: translateY(-50%);
+        }
+    }
+
+    .team-entry__block {
+        grid-template-columns: 400px 60px 1fr;
+        grid-template-rows: 80px;
+    }
+
+    .achievements__about {
+        width: 62%;
+    }
+
+    .achievements__numbers {
+        margin-bottom: 60px;
+    }
+
+    .team__pic {
+        height: 438px;
+    }
+
+    .team__pic-title {
+        @include h2Font (96px, 117px);
+    }
+
+    .abiut__history-block-text {
+        width: 61%;
+    }
 }
 
 @media (min-width: 1920px) {
     .wrapper {
         padding-left: 160px;
         padding-right: 160px;
+    }
+
+    .services__wrapper {
+        padding-left: 280px;
+        padding-right: 280px;
     }
 
     .header-desktop__wrapper {
@@ -474,7 +877,7 @@
     }
 
     .already-trust-block {
-        padding: 60px 0;
+        padding-bottom: 60px;
     }
 
     .nav {
@@ -504,5 +907,29 @@
         max-width: 1720px;
         margin-right: auto;
         margin-left: auto;
+    }
+
+    .about__history {
+        justify-content: space-between;
+    }
+
+    .achievements {
+        justify-content: space-between;
+    }
+
+    .achievements__about {
+        width: 69%;
+    }
+
+    .achievements__numbers {
+        margin-bottom: 0;
+    }
+
+    .team__pic {
+        height: 584px;
+    }  
+
+    .abiut__history-block-text {
+        width: 65%;
     }
 }

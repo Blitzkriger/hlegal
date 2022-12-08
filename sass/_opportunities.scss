@@ -7,36 +7,9 @@
 }
 
 .opportunities {
-    border-radius: 0px 0px 12px 12px;
     padding-top: 30px;
     padding-bottom: 60px;
     position: relative;
-    margin-bottom: 50px;
-
-    &::before {
-        content: "";
-        height: 10px;
-        background-color: #CACADB;
-        @include borderRadiusShadow;
-        display: flex;
-        position: absolute;
-        bottom: -10px;
-        left: 20px;
-        right: 20px;
-
-    }
-
-    &::after {
-        content: "";
-        height: 10px;
-        background-color: #E7E7F2;
-        @include borderRadiusShadow;
-        display: flex;
-        position: absolute;
-        bottom: -20px;
-        left: 40px;
-        right: 40px;
-    }
 }
 
 .services-link {
@@ -115,6 +88,10 @@
     text-decoration: none;
     margin-bottom: 15px;
     display: flex;
+
+    &:hover {
+        color: $hoverLink;
+    }
 }
 
 .benefit-list-text {

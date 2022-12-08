@@ -2,20 +2,31 @@
     box-sizing: border-box;
   }
 
-//   .wrapper {
-//     width: 1320px;
-//     margin-left: auto;
-//     margin-right: auto;
-//   }
+  .wrapper {
+    // min-height: 100%;
+    // display: flex;
+    // flex-direction: column;
+  }
 
-  body{
+  html, body{
     margin: 0;
     font-family: 'Montserrat', sans-serif;
+    height: 100%;
+  }
+
+  .main__wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
   }
   
   p,h1,h2,h3,h4,ul,li{
     margin: 0;
     padding: 0;
+  }
+
+  .main {
+    flex: 1 1 auto;
   }
   
   .hide {

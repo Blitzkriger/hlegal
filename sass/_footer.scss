@@ -53,6 +53,10 @@
     margin-bottom: 10px;
 }
 
+.social-media:hover path {
+    fill: $hoverLink;
+}
+
 .tel--black {
     color: #46466E;
     margin-bottom: 10px;
